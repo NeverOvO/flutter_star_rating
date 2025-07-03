@@ -33,9 +33,9 @@ class StarRating extends StatelessWidget {
 
     final space = SizedBox(width: between);
 
-    final full = Icon(Icons.star, color: color, size: starSize);
-    final half = Icon(Icons.star_half, color: color, size: starSize);
-    final empty = Icon(Icons.star_border, color: color, size: starSize);
+    final full = Icon(Icons.star_rounded, color: color, size: starSize);
+    final half = Icon(Icons.star_half_rounded, color: color, size: starSize);
+    final empty = Icon(Icons.star_rounded, color: Color.fromRGBO(242, 243, 245, 1), size: starSize);
 
     Icon chooseStar(int index) => (rating >= index + 1)
         ? full
